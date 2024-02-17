@@ -1,0 +1,14 @@
+extends layout
+
+block content
+  h1= title 
+  a(href="/") Go back! 
+  h1 New Message Form
+   form(method="POST" action="/new")
+    label(for="author") Author's Name:
+    input(type="text" name="author" id="author")
+    br
+    label(for="message") Message Text:
+    input(type="text" name="message" id="message")
+    br
+    button(type="submit") Submit
